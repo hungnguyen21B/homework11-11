@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title></title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-image: url("bg.jpg");
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 30%;
+        left: 30%;
+        width: 400px;
+        padding: 10px;
+    }
+    
+    form h1 {
+        margin: 10px;
+        color: orangered;
+        font-family: "Libre Baskerville", serif;
+    }
+    
+    form button {
+        margin-right: 0px;
+        float: right;
+        width: 100px;
+        background: none;
+        color: black;
+        height: 30px;
+        line-height: 30px;
+        border: 3px solid orangered;
+    }
+    
+    form div {
+        margin: 10px;
+    }
+    
+    form input {
+        margin: 10px;
+        outline: none;
+        background: none;
+        color: black;
+        height: 30px;
+        line-height: 30px;
+        border: 3px solid orangered;
+    }
+</style>
+
+<body>
+    <form action="index.php" method="POST" id="login">
+        <h1>Login Form</h1>
+        <input type="text" placeholder="enter user name" name="input-username">
+        <input type="password" placeholder="enter password" name="input-password">
+        <input type="submit">
+        <div><span>Forgot password</span><button>Sign up</button></div>
+    </form>
+</body>
+
+</html>

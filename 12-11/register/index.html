@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title></title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-image: url("bg.jpg");
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 20%;
+        left: 30%;
+        width: 400px;
+        padding: 10px;
+    }
+    
+    form h1 {
+        margin: 10px;
+        color: orangered;
+        font-family: "Libre Baskerville", serif;
+    }
+    
+    form input {
+        margin: 10px;
+        outline: none;
+        background: none;
+        color: black;
+        height: 30px;
+        line-height: 30px;
+        border: 3px solid orangered;
+    }
+</style>
+
+<body>
+    <form action="index.php" method="POST" id="login">
+        <h1>Register Form</h1>
+        <input type="text" placeholder="enter phone number" name="input-phone">
+        <input type="text" placeholder="enter user name" name="input-username">
+        <input type="password" placeholder="enter password" name="input-password1">
+        <input type="password" placeholder="enter password again" name="input-password2">
+        <input type="submit">
+    </form>
+</body>
+
+</html>
